@@ -1,0 +1,49 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px;
+  -ms-grid-columns: (minmax(200px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+  -ms-grid-rows: (150px)[30];
+      grid-template-rows: repeat(30, 150px);
+  width: 100%;
+}
+
+.grid__item {
+  width: 100%;
+}
+
+.grid--parent .grid__item:first-child {
+  grid-column: span 3;
+}
+
+.grid--parent .grid__item:nth-child(2n) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid--child {
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+}
+
+.grid--child .grid__item:nth-child(3n + 1) {
+  grid-column: span 2;
+}
+
+.grid--child .grid__item:nth-child(2n) {
+  grid-row: auto;
+}
+
+.testimonial {
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=stylesheet.css.map */

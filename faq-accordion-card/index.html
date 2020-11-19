@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="faq">
+          <div class="faq__container">
+            <h1 class="faq__heading">FAQ</h1>
+            <div class="accordion">
+              <button class="accordion__button" data-behaviour="accordion-button" data-target="faq-1" type="button">
+                How many team members can I invite?
+              </button>
+              <div class="accordion__content" data-element="faq-1">
+                <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                  team members for the Premium plan.</p>
+              </div>
+              <div class="accordion__separator"></div>
+
+              <button class="accordion__button" data-behaviour="accordion-button" data-target="faq-2" type="button">
+                How do I reset my password?
+              </button>
+              <div class="accordion__content" data-element="faq-2">
+                <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                  A reset link will be emailed to you.</p>
+              </div>
+              <div class="accordion__separator"></div>
+
+              <button class="accordion__button" data-behaviour="accordion-button" data-target="faq-3" type="button">
+                Can I cancel my subscription?
+              </button>
+              <div class="accordion__content" data-element="faq-3">
+                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+              </div>
+              <div class="accordion__separator"></div>
+
+              <button class="accordion__button" data-behaviour="accordion-button" data-target="faq-4" type="button">
+                Do you provide additional support?
+              </button>
+              <div class="accordion__content" data-element="faq-4">
+                <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+              </div>
+              <div class="accordion__separator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+
+    
+  </body>
+  <script type="text/javascript" src="./javascript/javascript.js"></script>
+</html>

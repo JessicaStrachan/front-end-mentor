@@ -31,6 +31,7 @@ body
         color: $base-font-color
         font-size: $base-font-size
         margin: 0
+        line-height: 1.5
 
 // Page
 .page
@@ -43,7 +44,7 @@ body
 .container
     max-width: 920px
     margin: 150px auto
-    padding: 0 20px
+    padding: 0 15px
 
 // FAQ
 .faq
@@ -51,6 +52,7 @@ body
     border-radius: 15px
     box-shadow: 0px 0px 10px rgba($black, .2)
     padding: 138px 23px 48px 23px
+    position: relative
 
     &__container
         // margin-top: 138px
@@ -59,8 +61,21 @@ body
         color: $very-dark-desaturated-blue
         font-size: 28px
         font-weight: 700
+        padding-bottom: 20px
         text-align: center
         text-transform: uppercase
+
+    &__pattern
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translateX(-50%)
+
+    &__woman
+        left: 50%
+        position: absolute
+        transform: translateX(-50%)
+        top: -110px
 
 // accordion
 .accordion
@@ -117,13 +132,63 @@ body
         height: 1px
         width: 100%
 
+.attribution 
+    font-size: 11px
+    text-align: center
+    
+    &__link
+        color: $white
+
+@media screen and (min-width: 950px)
+    .container
+        padding: 0
+
 @media screen and (min-width: 768px)
+    .container
+        // overflow: hidden
+        position: relative
+
+    .u
+        &-show\@min-768
+            display: block
+
+        &-hide\@min-768
+            display: none
+
     .faq
-        padding: 106px 95px 83px 95px
+        padding: 70px 95px 84px 95px
+        overflow: hidden
 
         &__heading
+            padding-bottom: 30px
             text-align: left
 
         &__container
             margin-left: auto
             width: 50%
+
+        &__pattern
+            position: absolute
+            left: -596px
+            top: -303px
+            transform: none
+
+        &__woman
+            left: -82px
+            top: 60px
+            transform: none
+
+    .box
+        position: absolute
+        left: -93px
+        top: 190px
+        z-index: 1
+
+
+@media screen and (max-width: 768px)
+    .u
+        &-show\@768
+            display: block
+
+        &-hide\@768
+            display: none

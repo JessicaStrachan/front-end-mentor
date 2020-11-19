@@ -8,6 +8,7 @@ body h1, body h2, body h3, body h4, body p, body a {
   color: #4a4b5e;
   font-size: 12px;
   margin: 0;
+  line-height: 1.5;
 }
 
 .page {
@@ -21,7 +22,7 @@ body h1, body h2, body h3, body h4, body p, body a {
 .container {
   max-width: 920px;
   margin: 150px auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .faq {
@@ -30,14 +31,32 @@ body h1, body h2, body h3, body h4, body p, body a {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 138px 23px 48px 23px;
+  position: relative;
 }
 
 .faq__heading {
   color: #1d1e35;
   font-size: 28px;
   font-weight: 700;
+  padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.faq__pattern {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.faq__woman {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -110px;
 }
 
 .accordion__button {
@@ -106,16 +125,70 @@ body h1, body h2, body h3, body h4, body p, body a {
   width: 100%;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution__link {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 950px) {
+  .container {
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .container {
+    position: relative;
+  }
+  .u-show\@min-768 {
+    display: block;
+  }
+  .u-hide\@min-768 {
+    display: none;
+  }
   .faq {
-    padding: 106px 95px 83px 95px;
+    padding: 70px 95px 84px 95px;
+    overflow: hidden;
   }
   .faq__heading {
+    padding-bottom: 30px;
     text-align: left;
   }
   .faq__container {
     margin-left: auto;
     width: 50%;
+  }
+  .faq__pattern {
+    position: absolute;
+    left: -596px;
+    top: -303px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .faq__woman {
+    left: -82px;
+    top: 60px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .box {
+    position: absolute;
+    left: -93px;
+    top: 190px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .u-show\@768 {
+    display: block;
+  }
+  .u-hide\@768 {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

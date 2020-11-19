@@ -1,11 +1,11 @@
 body {
   background-color: #ecf2f8;
   margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-body h1, body h2, body h3, body h4, body p {
+body h1, body h2, body h3, body h4, body p, body a {
   color: #ecf2f8;
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
   margin: 0;
 }
@@ -167,6 +167,18 @@ body h1, body h2, body h3, body h4, body p {
 
 .author--dark .author__title {
   color: rgba(72, 85, 106, 0.5);
+}
+
+.attribution {
+  font-size: 11px;
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.attribution__link {
+  color: #7541c8;
 }
 
 @media screen and (max-width: 1024px) {

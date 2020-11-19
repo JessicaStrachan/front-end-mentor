@@ -14,10 +14,10 @@ $base-font-color: $light-grayish-blue
 body
     background-color: $light-grayish-blue
     margin: 0
+    font-family: $base-font-family
 
-    h1, h2, h3, h4, p
+    h1, h2, h3, h4, p, a
         color: $base-font-color
-        font-family: $base-font-family
         font-size: $base-font-size
         margin: 0
 
@@ -156,6 +156,17 @@ body
 
             &__title
                 color: rgba($very-dark-grayish-blue, .5)
+
+
+.attribution
+    font-size: 11px
+    padding-top: 100px
+    position: relative
+    text-align: center
+    z-index: 1
+
+    &__link
+        color: $moderate-violet
 
 @media screen and (max-width: 1024px)
     .grid
